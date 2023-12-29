@@ -11,16 +11,19 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
+  <!---New Site Metas-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <title>Domestic Pet Online Store</title>
+  <title>My Pet Store</title>
 
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-
   <!-- font awesome style -->
   <link href="css/font-awesome.min.css" rel="stylesheet" />
-
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
@@ -31,66 +34,50 @@
 <body>
 
   <div class="hero_area">
-    <!-- header section strats -->
-    <header class="header_section">
+    <!-- Here I have restructured our NavBar to new bootstrap. I have included new elments to make our navbar more responsive
+    This code was written by Immanuel Flepu -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
       <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
-            <!--<div style="background-color: white; display:inline-block;vertical-align:top; font-size: 6px;">
-              <figure>
-                <img src="images/logo7.jpg" width="200px"height="100px" alt="img"/> <br><br>
-                <figcaption style="padding-left: 30px; text-align: justify; color: black;">AUTO MOBILE . SOLAR BATTERIES . ALLIED EQUIPMENT</figcaption>
-                <p style="padding-left: 30px; text-align: justify; color: black;"><b></b></p>
-              </figure>
-            </div>
-              <div style="display:inline-block; background-color: white;">
-              <p style="padding-left: 10px; color: red;">
-              Mannafalls <br>
-              </p>
-              <p style="padding-left: 20px; color: blue;">Batteries</p>
-              </div> -->
-              <figure  style="padding-left: 40px; font-size: 11px; padding-top: 10px;">
-                <img src="images/logo8.jpg" alt="" style="width: 96%">
-                <p style="background-color: white; padding-left: 15px; margin-right: 13px; font-size: 11px; color: black;">AUTO MOBILE * SOLAR BATTERIES * ALLIED EQUIPMENT </p>
-                <!-- <figcaption style="padding-left: 40px; font-size: 11px; padding-top: 0%;">AUTO MOBILE <b style="font-size: 50px;">.</b> SOLAR BATTERIES <b style="font-size: 50px;">.</b> ALLIED EQUIPMENT
-                </figcaption> -->
-              </figure>
-          <br>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class=""> </span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav  ">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        <a class="navbar-brand" href="#">My Pet Store</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">My Pet Store</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html"> About</a>
+                <a class="nav-link" href="login.html">Sign-in</a>
               </li>
-              <div class="dropdown">
-                <button class="dropbtn nav-item">Domestic Pets</button>
-                <div class="dropdown-content">
-                <a class="nav-link" href="dog.html">Dogs</a>
-                <a class="nav-link" href="cat.html">Cats</a>
-                <a class="nav-link" href="monkey.html">Monkey</a>
-                </div>
-              </div>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="shop_edited.html">Our Shop</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  My Pets
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="dog.html">Dogs</a></li>
+                  <li><a class="dropdown-item" href="cat.html">Cats</a></li>
+                  <li><a class="dropdown-item" href="monkey.html">My pets home</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
               </li>
             </ul>
-            <div class="quote_btn-container">
-              <a href="cart.html" target="_blank" class="quote_btn">
-                View Cart
-              </a>
-            </div>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
           </div>
-        </nav>
+        </div>
       </div>
-    </header>
+    </nav>
     <!-- end header section -->
     <!-- slider section -->
     <section class="slider_section ">
@@ -101,21 +88,19 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="img-box">
-                    <img src="images/solar3.jpg" alt="">
+                    <img src="images/Pic/png-transparent-pet-carrier-bicycle-baskets-nantucket-cats-garden-coffee-shop-pet-bicycle-animal-thumbnail.png" alt="">
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="detail-box">
                     <h1>
-                      Mannafalls Batteries Experts
+                      My Pets Store
                     </h1>
                     <p>
                       We provide you with all your battery needs in a professional manner.
                     </p>
                     <div class="btn-box">
-                      <a href="" class="btn1">
-                        Contact Us
-                      </a>
+                      <button class="custom-btn btn-1">Read More</button>
                     </div>
                   </div>
                 </div>
@@ -127,21 +112,19 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="img-box">
-                    <img src="images/lead_crystal6.jpg" alt="">
+                    <img src="images/Pic/png-transparent-cat-litter-trays-dog-pet-shop-cat-horse-cat-like-mammal-animals-thumbnail.png" alt="">
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="detail-box">
                     <h1>
-                      Mannafalls Batteries Experts
+                      My Pet Store
                     </h1>
                     <p>
                       Welcome to battrey experts who meet your needs in an efficient and timely manner
                     </p>
                     <div class="btn-box">
-                      <a href="" class="btn1">
-                        Contact Us
-                      </a>
+                      <button class="custom-btn btn-1">Read More</button>
                     </div>
                   </div>
                 </div>
@@ -153,21 +136,19 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="img-box">
-                    <img src="images/son.jpg" alt="">
+                    <img src="images/Pic/png-transparent-cat-food-kitten-fodder-pet-shop-cat-animals-5-кг-premium-thumbnail.png" alt="">
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="detail-box">
                     <h1>
-                      Mannafalls Batteries Experts
+                    My Pet Store
                     </h1>
                     <p>
                       Get the service battery service you want.
                     </p>
                     <div class="btn-box">
-                      <a href="" class="btn1">
-                        Contact Us
-                      </a>
+                      <button class="custom-btn btn-1">Read More</button>
                     </div>
                   </div>
                 </div>
@@ -183,233 +164,132 @@
       </div>
 
     </section>
-    <!-- end slider section -->
+    
   </div>
+<br>
+  <!-- end slider section -->
 
   <!-- service section -->
-  <section class="service_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          Our Services
-        </h2>
-        <p>
-          We offer different types of Batteries to suite your needs.
-        </p>
-      </div>
-      <div class="row">
-        <div class="col-md-6 col-lg-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/cs3.jpg" alt="">
-            </div>
-            <br>
-            <div class="detail-box">
-              <h5>
-                CAR BATTERIES
-              </h5>
-              <!--<p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              </p>-->
-              <a href="https://wa.me/c/27671178526" target="_blank">
-                <span>
-                  Read More
-                </span>
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
+  <div class="row">
+    <div class="col order-last">
+      <div class="card">
+        <div class="card-img"></div>
+        <div class="card-info">
+          <p class="text-title">Product title </p>
+          <p class="text-body">Product description and details</p>
         </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/cs3_a.jpg" alt="">
-            </div>
-            <br>
-            <div class="detail-box">
-              <h5>
-                TRUCK BATTERIES
-              </h5>
-              <!--<p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              </p> -->
-              <a href="https://wa.me/c/27671178526" target="_blank">
-                <span>
-                  Read More
-                </span>
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
+        <div class="card-footer">
+        <span class="text-title">$499.49</span>
+        <div class="card-button">
+          <svg class="svg-icon" viewBox="0 0 20 20">
+            <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+            <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+            <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+          </svg>
         </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/cs3_b.jpg" alt="">
-            </div>
-            <br>
-            <div class="detail-box">
-              <h5>
-                BAKKIE BATTERIES
-              </h5>
-              <!--<p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              </p> -->
-              <a href="https://wa.me/c/27671178526" target="_blank">
-                <span>
-                  Read More
-                </span>
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/son.jpg" alt="">
-            </div>
-            <br>
-            <div class="detail-box">
-              <h5>
-                POWER POINTS
-              </h5>
-              <!--<p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              </p> -->
-              <a href="https://wa.me/c/27671178526" target="_blank">
-                <span>
-                  Read More
-                </span>
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 col-lg-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/power_inverter.jpg" alt="">
-            </div>
-            <br>
-            <div class="detail-box">
-              <h5>
-                INVERTORS
-              </h5>
-              <!-- <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              </p> -->
-              <a href="https://wa.me/c/27671178526" target="_blank">
-                <span>
-                  Read More
-                </span>
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/solar_charger_controller.jpg" alt="">
-            </div>
-            <br>
-            <div class="detail-box">
-              <h5>
-                REGULATORS
-              </h5>
-              <!-- <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              </p> -->
-              <a href="https://wa.me/c/27671178526" target="_blank">
-                <span>
-                  Read More
-                </span>
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/solar2.jpg" alt="">
-            </div>
-            <br>
-            <div class="detail-box">
-              <h5>
-                SOLAR BATTERIES
-              </h5>
-              <!-- <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              </p> -->
-              <a href="https://wa.me/c/27671178526" target="_blank">
-                <span>
-                  Read More
-                </span>
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/c_power.jpg" alt="">
-            </div>
-            <br>
-            <div class="detail-box">
-              <h5>
-                BREAKERS
-              </h5>
-              <!-- <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              </p> -->
-              <a href="https://wa.me/c/27671178526" target="_blank">
-                <span>
-                  Read More
-                </span>
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 col-lg-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/son.jpg" alt="">
-            </div>
-            <br>
-            <div class="detail-box">
-              <h5>
-                ALLIED PRODUCTS
-              </h5>
-              <!-- <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              </p> -->
-              <a href="https://wa.me/c/27671178526" target="_blank">
-                <span>
-                  Read More
-                </span>
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-    </div>
-    <br>
-    <div class="row">
-      <div class="quote_btn-container">
-        <a href="services.html" target="_blank" class="quote_btn">
-          View More Services ...
-        </a>
       </div>
     </div>
-  </section>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-img"></div>
+        <div class="card-info">
+          <p class="text-title">Product title </p>
+          <p class="text-body">Product description and details</p>
+        </div>
+        <div class="card-footer">
+        <span class="text-title">$499.49</span>
+        <div class="card-button">
+          <svg class="svg-icon" viewBox="0 0 20 20">
+            <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+            <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+            <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="col order-first">
+      <div class="card">
+        <div class="card-img"></div>
+        <div class="card-info">
+          <p class="text-title">Product title </p>
+          <p class="text-body">Product description and details</p>
+        </div>
+        <div class="card-footer">
+        <span class="text-title">$499.49</span>
+        <div class="card-button">
+          <svg class="svg-icon" viewBox="0 0 20 20">
+            <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+            <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+            <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+<br>
+  <div class="row">
+    <div class="col order-last">
+      <div class="card">
+        <div class="card-img"></div>
+        <div class="card-info">
+          <p class="text-title">Product title </p>
+          <p class="text-body">Product description and details</p>
+        </div>
+        <div class="card-footer">
+        <span class="text-title">$499.49</span>
+        <div class="card-button">
+          <svg class="svg-icon" viewBox="0 0 20 20">
+            <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+            <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+            <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-img"></div>
+        <div class="card-info">
+          <p class="text-title">Product title </p>
+          <p class="text-body">Product description and details</p>
+        </div>
+        <div class="card-footer">
+        <span class="text-title">$499.49</span>
+        <div class="card-button">
+          <svg class="svg-icon" viewBox="0 0 20 20">
+            <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+            <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+            <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="col order-first">
+      <div class="card">
+        <div class="card-img"></div>
+        <div class="card-info">
+          <p class="text-title">Product title </p>
+          <p class="text-body">Product description and details</p>
+        </div>
+        <div class="card-footer">
+        <span class="text-title">$499.49</span>
+        <div class="card-button">
+          <svg class="svg-icon" viewBox="0 0 20 20">
+            <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+            <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+            <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <br>
   <!-- end service section -->
 
   <!-- about section -->
@@ -426,10 +306,8 @@
             </div>
             <p>
               we provide large selection of batteries for: Car, Bakkie, Truck, Solar, Solar Panels, Power Points,  Inverters, Regultors,  Breakers and  Allied Products. We value our customers.
-            </p>
-            <a href="https://wa.me/c/27671178526" target="_blank">
-              Read More ...
-            </a>
+            </p><button class="custom-btn btn-1" href="https://wa.me/c/27671178526">
+              Read More </button>
           </div>
         </div>
         <div class="col-md-6 ">
@@ -457,9 +335,8 @@
         <br>
         <div class="row">
           <div class="quote_btn-container">
-            <a href="https://wa.me/c/27671178526" target="_blank" class="quote_btn">
-              View Catalog
-            </a>
+            <button class="custom-btn btn-1" href="https://wa.me/c/27671178526">
+            View More </button>            
           </div>
         </div>
       </div>
